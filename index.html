@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Информация о Python</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Добро пожаловать на сайт о Python!</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="accordion">
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(1)">
+                    Переменные
+                </div>
+                <div class="card-content" id="card1">
+                    <div class="sub-section">
+                        <h2>Числовые переменные</h2>
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(2)">
+                                Целые числа
+                            </div>
+                            <div class="card-content" id="card2">
+                                <code title="Целые числа (integer)">int_var = 42</code>
+                                <pre class="code">print(int_var)</pre>
+                                <div class="rule">Переменная int_var содержит целое число.</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(3)">
+                                Строковые переменные
+                            </div>
+                            <div class="card-content" id="card3">
+                                <code title="Текстовые строки">str_var = "Hello, World!"</code>
+                                <pre class="code">print(str_var)</pre>
+                                <div class="rule">Переменная str_var содержит текстовую строку.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Логические переменные</h2>
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(4)">
+                                Булевы переменные
+                            </div>
+                            <div class="card-content" id="card4">
+                                <code title="Логические значения истина">bool_var = True</code>
+                                <pre class="code">print(bool_var)</pre>
+                                <div class="rule">Переменная bool_var содержит логическое значение истина (True).</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(5)">
+                                Нулевые переменные
+                            </div>
+                            <div class="card-content" id="card5">
+                                <code title="Переменная без значения">none_var = None</code>
+                                <pre class="code">print(none_var)</pre>
+                                <div class="rule">Переменная none_var не содержит значения (None).</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(6)">
+                                Списковые переменные
+                            </div>
+                            <div class="card-content" id="card6">
+                                <code title="Упорядоченные коллекции элементов">list_var = [1, 2, 3]</code>
+                                <pre class="code">print(list_var)</pre>
+                                <div class="rule">Переменная list_var содержит список упорядоченных элементов.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(7)">
+                                Кортежи
+                            </div>
+                            <div class="card-content" id="card7">
+                                <code title="Неизменяемые упорядоченные коллекции элементов">tuple_var = (1, 2, 3)</code>
+                                <pre class="code">print(tuple_var)</pre>
+                                <div class="rule">Переменная tuple_var содержит кортеж неизменяемых элементов.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(8)">
+                                Словари
+                            </div>
+                            <div class="card-content" id="card8">
+                                <code title="Пары ключ-значение">dict_var = {"имя": "Анна", "возраст": 25}</code>
+                                <pre class="code">print(dict_var)</pre>
+                                <div class="rule">Переменная dict_var содержит словарь с парами ключ-значение.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header" onclick="toggleCard(9)">
+                                Множества
+                            </div>
+                            <div class="card-content" id="card9">
+                                <code title="Уникальные элементы без порядка">set_var = {1, 2, 3}</code>
+                                <pre class="code">print(set_var)</pre>
+                                <div class="rule">Переменная set_var содержит множество уникальных элементов.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(15)">
+                    Преобразование типов
+                </div>
+                <div class="card-content" id="section15">
+                    <div class="sub-section">
+                        <h2>Преобразование в целые числа (integer)</h2>
+                        <pre class="code">float_num = 3.14
+            int_num = int(float_num)
+            print(int_num)  # Выведет 3</pre>
+                        <div class="rule">В этом примере переменная `float_num` содержит число с плавающей запятой (float), и она преобразуется в целое число (integer) с использованием функции `int()`. Результат преобразования выводится на экран.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Преобразование в числа с плавающей запятой (float)</h2>
+                        <pre class="code">int_num = 42
+            float_num = float(int_num)
+            print(float_num)  # Выведет 42.0</pre>
+                        <div class="rule">В этом примере переменная `int_num` содержит целое число (integer), и она преобразуется в число с плавающей запятой (float) с использованием функции `float()`. Результат преобразования выводится на экран.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Преобразование в строки (string)</h2>
+                        <pre class="code">num = 123
+            str_num = str(num)
+            print("Число в виде строки: " + str_num)</pre>
+                        <div class="rule">В этом примере переменная `num` содержит число, и она преобразуется в строку (string) с использованием функции `str()`. Результат преобразования выводится вместе с текстом на экран.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Преобразование в логические значения (bool)</h2>
+                        <pre class="code">zero = 0
+            non_zero = 42
+            bool_zero = bool(zero)
+            bool_non_zero = bool(non_zero)
+            print("Нулевое значение как логическое: " + str(bool_zero))
+            print("Ненулевое значение как логическое: " + str(bool_non_zero))</pre>
+                        <div class="rule">В этом примере переменные `zero` и `non_zero` содержат числа. Они преобразуются в логические значения (bool) с использованием функции `bool()`. Результат преобразования выводится вместе с текстом на экран.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(3)">
+                    Консольный ввод и вывод
+                </div>
+                <div class="card-content" id="section3">
+                    <div class="sub-section">
+                        <h2>Консольный ввод</h2>
+                        <p>В Python можно использовать функцию <code>input()</code> для чтения данных с консоли:</p>
+                        <pre class="code">user_input = input("Введите что-то: ")
+        print("Вы ввели:", user_input)</pre>
+                        <div class="rule">Программа запросит вас ввести данные, и затем выведет их на консоль.</div>
+                    </div>
+                    <div class="sub-section">
+                        <h2>Консольный вывод</h2>
+                        <p>Для вывода данных на консоль используется функция <code>print()</code>:</p>
+                        <pre class="code">print("Привет, мир!")</pre>
+                        <div class="rule">Этот код выведет "Привет, мир!" на консоль.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleCard(10)">
+                            <div class="sub-section">
+                                <h2>Примеры вывода в консоль</h2>
+                                <div class="sub-section">
+                                    <div class="card">
+                                        <div class="card-header" onclick="toggleCard(11)">
+                                            Простой вывод
+                                        </div>
+                                        <div class="card-content" id="card11">
+                                            <pre class="code">print("Привет, мир!")</pre>
+                                            <div class="rule">Этот код выведет "Привет, мир!" в консоль.</div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card">
+                                        <div class="card-header" onclick="toggleCard(12)">
+                                            Форматированный вывод
+                                        </div>
+                                        <div class="card-content" id="card12">
+                                            <pre class="code">name = "Миша"
+                                age = 30
+                                print(f"Привет, меня зовут {name} и мне {age} лет.")</pre>
+                                            <div class="rule">Этот код использует форматированную строку для вывода имени и возраста в консоль. Он выведет "Привет, меня зовут Миша и мне 30 лет."</div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card">
+                                        <div class="card-header" onclick="toggleCard(13)">
+                                            Вывод чисел и вычисления
+                                        </div>
+                                        <div class="card-content" id="card13">
+                                            <pre class="code">a = 5
+                                b = 10
+                                sum = a + b
+                                print(f"Сумма {a} и {b} равна {sum}.")</pre>
+                                            <div class="rule">Этот код вычисляет сумму двух чисел и выводит результат в консоль. Он выведет "Сумма 5 и 10 равна 15."</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(16)">
+                    Область видимости переменных
+                </div>
+                <div class="card-content" id="section16">
+                    <div class="sub-section">
+                        <h2>Локальная область видимости</h2>
+                        <pre class="code">def my_function():
+                local_var = 10  # Переменная local_var видна только внутри функции
+                print(local_var)
+            
+            my_function()
+            # print(local_var)  # Эта строка вызовет ошибку, так как local_var не видна за пределами функции</pre>
+                        <div class="rule">Переменная `local_var` создана внутри функции `my_function()`, и ее область видимости ограничена этой функцией. Она недоступна за пределами функции.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Глобальная область видимости</h2>
+                        <pre class="code">global_var = 20  # Переменная global_var видна в любом месте программы
+            def my_function():
+                print(global_var)
+            
+            my_function()
+            print(global_var)  # Переменная global_var доступна за пределами функции</pre>
+                        <div class="rule">Переменная `global_var` создана вне функции и поэтому доступна в любом месте программы.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Неявная локальная область видимости</h2>
+                        <pre class="code">var = 30
+            def my_function():
+                var = 50  # Новая переменная var создана внутри функции и перекрывает глобальную var
+                print(var)
+            
+            my_function()
+            print(var)  # Выведет 30, так как глобальная переменная var не изменилась</pre>
+                        <div class="rule">Переменная `var`, созданная внутри функции с тем же именем, что и глобальная переменная, создает новую локальную переменную, перекрывая глобальную переменную с тем же именем внутри функции.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(4)">
+                    Арифметические операции с числами
+                </div>
+                <div class="card-content" id="section4">
+                    <div class="sub-section">
+                        <h2>Сложение двух чисел</h2>
+                        <pre class="code">result = 5 + 3
+            print("Сумма: ", result)</pre>
+                        <div class="rule">Этот код сложит 5 и 3, результат (8) будет выведен в консоль.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Вычитание двух чисел</h2>
+                        <pre class="code">result = 10 - 3
+            print("Разность: ", result)</pre>
+                        <div class="rule">Этот код вычтет 3 из 10, результат (7) будет выведен в консоль.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Умножение двух чисел</h2>
+                        <pre class="code">result = 4 * 6
+            print("Произведение: ", result)</pre>
+                        <div class="rule">Этот код умножит 4 на 6, результат (24) будет выведен в консоль.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Деление двух чисел</h2>
+                        <pre class="code">result = 15 / 3
+            print("Частное: ", result)</pre>
+                        <div class="rule">Этот код разделит 15 на 3, результат (5.0) будет выведен в консоль.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Целочисленное деление двух чисел</h2>
+                        <pre class="code">result = 17 // 3
+            print("Целочисленное деление: ", result)</pre>
+                        <div class="rule">Этот код выполнит целочисленное деление 17 на 3, результат (5) будет выведен в консоль.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Возведение в степень</h2>
+                        <pre class="code">result = 2 ** 3
+            print("2 в степени 3: ", result)</pre>
+                        <div class="rule">Этот код возведет 2 в степень 3, результат (8) будет выведен в консоль.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Получение остатка от деления</h2>
+                        <pre class="code">result = 17 % 3
+            print("Остаток от деления 17 на 3: ", result)</pre>
+                        <div class="rule">Этот код вернет остаток от деления 17 на 3, результат (2) будет выведен в консоль.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(5)">
+                    Арифметические операции с присвоением
+                </div>
+                <div class="card-content" id="section5">
+                    <div class="sub-section">
+                        <h2>Операция += (Сложение с присвоением)</h2>
+                        <pre class="code">a = 5
+            a += 3
+            print(a)  # Выведет 8</pre>
+                        <div class="rule">Эта операция сложит значение переменной a (5) с 3 и присвоит результат обратно переменной a.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция -= (Вычитание с присвоением)</h2>
+                        <pre class="code">b = 10
+            b -= 4
+            print(b)  # Выведет 6</pre>
+                        <div class="rule">Эта операция вычтет 4 из значения переменной b (10) и присвоит результат обратно переменной b.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция *= (Умножение с присвоением)</h2>
+                        <pre class="code">c = 3
+            c *= 2
+            print(c)  # Выведет 6</pre>
+                        <div class="rule">Эта операция умножит значение переменной c (3) на 2 и присвоит результат обратно переменной c.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция /= (Деление с присвоением)</h2>
+                        <pre class="code">d = 20
+            d /= 4
+            print(d)  # Выведет 5.0</pre>
+                        <div class="rule">Эта операция разделит значение переменной d (20) на 4 и присвоит результат обратно переменной d.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция //= (Целочисленное деление с присвоением)</h2>
+                        <pre class="code">e = 25
+            e //= 3
+            print(e)  # Выведет 8</pre>
+                        <div class="rule">Эта операция выполнит целочисленное деление значения переменной e (25) на 3 и присвоит результат обратно переменной e.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция %= (Получение остатка от деления с присвоением)</h2>
+                        <pre class="code">f = 17
+            f %= 3
+            print(f)  # Выведет 2</pre>
+                        <div class="rule">Эта операция вернет остаток от деления значения переменной f (17) на 3 и присвоит результат обратно переменной f.</div>
+                    </div>
+                </div>
+            </div>            
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(6)">
+                    Операции сравнения
+                </div>
+                <div class="card-content" id="section6">
+                    <div class="sub-section">
+                        <h2>Операция == (Равно)</h2>
+                        <pre class="code">x = 5
+            y = 5
+            result = x == y
+            print(result)  # Выведет True</pre>
+                        <div class="rule">Эта операция проверит, равны ли переменные x и y, и вернет True, если они равны, и False в противном случае.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция != (Не равно)</h2>
+                        <pre class="code">a = 10
+            b = 5
+            result = a != b
+            print(result)  # Выведет True</pre>
+                        <div class="rule">Эта операция проверит, не равны ли переменные a и b, и вернет True, если они не равны, и False в противном случае.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция > (Больше чем)</h2>
+                        <pre class="code">m = 8
+            n = 3
+            result = m > n
+            print(result)  # Выведет True</pre>
+                        <div class="rule">Эта операция проверит, больше ли переменная m, чем переменная n, и вернет True, если это правда, и False в противном случае.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция < (Меньше чем)</h2>
+                        <pre class="code">p = 4
+            q = 7
+            result = p < q
+            print(result)  # Выведет True</pre>
+                        <div class="rule">Эта операция проверит, меньше ли переменная p, чем переменная q, и вернет True, если это правда, и False в противном случае.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция >= (Больше или равно)</h2>
+                        <pre class="code">c = 5
+            d = 5
+            result = c >= d
+            print(result)  # Выведет True</pre>
+                        <div class="rule">Эта операция проверит, больше ли или равна переменная c переменной d, и вернет True, если это правда, и False в противном случае.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операция <= (Меньше или равно)</h2>
+                        <pre class="code">e = 2
+            f = 3
+            result = e <= f
+            print(result)  # Выведет True</pre>
+                        <div class="rule">Эта операция проверит, меньше ли или равна переменная e переменной f, и вернет True, если это правда, и False в противном случае.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(7)">
+                    Оператор in
+                </div>
+                <div class="card-content" id="section7">
+                    <div class="sub-section">
+                        <h2>Оператор in (Принадлежность элементу)</h2>
+                        <pre class="code">fruits = ["яблоко", "банан", "груша"]
+            check_fruit = "яблоко"
+            
+            result = check_fruit in fruits
+            print(result)  # Выведет True</pre>
+                        <div class="rule">Этот код проверит, принадлежит ли переменная `check_fruit` списку `fruits`. Вернет True, если элемент найден в списке, и False в противном случае.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(8)">
+                    Условная конструкция if
+                </div>
+                <div class="card-content" id="section8">
+                    <div class="sub-section">
+                        <h2>Условный оператор if (если)</h2>
+                        <pre class="code">x = 10
+            
+            if x > 0:
+                print("Число положительное")
+            elif x == 0:
+                print("Число ноль")
+            else:
+                print("Число отрицательное")</pre>
+                        <div class="rule">Этот код проверяет значение переменной `x`. Если `x` больше нуля, он выведет "Число положительное". Если `x` равно нулю, он выведет "Число ноль". В противном случае он выведет "Число отрицательное".</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(9)">
+                    Циклы
+                </div>
+                <div class="card-content" id="section9">
+                    <div class="sub-section">
+                        <h2>Цикл for (для каждого элемента в последовательности)</h2>
+                        <pre class="code">fruits = ["яблоко", "банан", "груша"]
+            for fruit in fruits:
+                print(fruit)</pre>
+                        <div class="rule">Этот код перебирает каждый элемент в списке `fruits` и выводит его на экран.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Цикл while (пока условие истинно)</h2>
+                        <pre class="code">count = 1
+            while count <= 5:
+                print(count)
+                count += 1</pre>
+                        <div class="rule">Этот код будет выводить числа от 1 до 5, пока переменная `count` меньше или равна 5.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Операторы break и continue</h2>
+                        <pre class="code">for i in range(10):
+                if i == 3:
+                    continue
+                if i == 8:
+                    break
+                print(i)</pre>
+                        <div class="rule">Этот код использует оператор `continue` для пропуска числа 3 и оператор `break` для завершения цикла, когда i достигает 8.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(10)">
+                    Функции
+                </div>
+                <div class="card-content" id="section10">
+                    <div class="sub-section">
+                        <h2>Определение и вызов функции</h2>
+                        <pre class="code">def greet(name):
+                print("Привет, " + name + "!")
+                
+            greet("Миша")</pre>
+                        <div class="rule">Этот код определяет функцию `greet`, которая принимает аргумент `name` и выводит приветствие с использованием этого аргумента. Затем он вызывает функцию `greet` с аргументом "Миша".</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Возвращаемые значения функции</h2>
+                        <pre class="code">def add(x, y):
+                return x + y
+            
+            result = add(3, 5)
+            print(result)  # Выведет 8</pre>
+                        <div class="rule">Этот код определяет функцию `add`, которая возвращает сумму двух аргументов `x` и `y`. Затем он вызывает функцию `add` с аргументами 3 и 5 и выводит результат (8).</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Аргументы по умолчанию</h2>
+                        <pre class="code">def greet(name="Гость"):
+                print("Привет, " + name + "!")
+                
+            greet()  # Выведет "Привет, Гость!"</pre>
+                        <div class="rule">Этот код определяет функцию `greet` с аргументом по умолчанию "Гость". Если аргумент не передан, он использует значение по умолчанию.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Неопределенное количество аргументов</h2>
+                        <pre class="code">def calculate_sum(*args):
+                total = 0
+                for num in args:
+                    total += num
+                return total
+            
+            result = calculate_sum(1, 2, 3, 4)
+            print(result)  # Выведет 10</pre>
+                        <div class="rule">Этот код определяет функцию `calculate_sum`, которая принимает любое количество аргументов и возвращает их сумму. Оператор `*args` позволяет передавать переменное количество аргументов.</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection(11)">
+                            Параметры функции
+                        </div>
+                        <div class="card-content" id="section11">
+                            <div class="sub-section">
+                                <h2>Позиционные параметры</h2>
+                                <pre class="code">def greet(name, age):
+                        print("Привет, " + name + "! Тебе " + str(age) + " лет.")
+                        
+                    greet("Миша", 30)</pre>
+                                <div class="rule">Этот код определяет функцию `greet`, которая принимает два позиционных параметра `name` и `age` и выводит приветствие с их использованием.</div>
+                            </div>
+                    
+                            <div class="sub-section">
+                                <h2>Именованные параметры</h2>
+                                <pre class="code">def greet(name, age):
+                        print("Привет, " + name + "! Тебе " + str(age) + " лет.")
+                        
+                    greet(age=30, name="Миша")</pre>
+                                <div class="rule">Этот код также использует функцию `greet`, но передает параметры в виде именованных аргументов. Порядок аргументов не важен, потому что они именованы.</div>
+                            </div>
+                    
+                            <div class="sub-section">
+                                <h2>Значения параметров по умолчанию</h2>
+                                <pre class="code">def greet(name, age=18):
+                        print("Привет, " + name + "! Тебе " + str(age) + " лет.")
+                        
+                    greet("Анна")  # Выведет "Привет, Анна! Тебе 18 лет."</pre>
+                                <div class="rule">В этой функции параметр `age` имеет значение по умолчанию 18. Если значение `age` не передано, оно будет автоматически 18.</div>
+                            </div>
+                    
+                            <div class="sub-section">
+                                <h2>Произвольное количество параметров</h2>
+                                <pre class="code">def calculate_sum(*args):
+                        total = 0
+                        for num in args:
+                            total += num
+                        return total
+                    
+                    result = calculate_sum(1, 2, 3, 4)
+                    print(result)  # Выведет 10</pre>
+                                <div class="rule">Этот код использует оператор `*args` для принятия произвольного количества параметров. Он суммирует все переданные числа и возвращает результат.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection(12)">
+                            Оператор return и возвращение результата из функции
+                        </div>
+                        <div class="card-content" id="section12">
+                            <div class="sub-section">
+                                <h2>Оператор return</h2>
+                                <pre class="code">def add(x, y):
+                        result = x + y
+                        return result
+                    
+                    sum = add(3, 5)
+                    print(sum)  # Выведет 8</pre>
+                                <div class="rule">Этот код определяет функцию `add`, которая возвращает сумму двух аргументов `x` и `y` с использованием оператора `return`. Затем он вызывает функцию `add` с аргументами 3 и 5 и выводит результат (8).</div>
+                            </div>
+                    
+                            <div class="sub-section">
+                                <h2>Возврат нескольких значений</h2>
+                                <pre class="code">def get_name_and_age():
+                        name = "Миша"
+                        age = 30
+                        return name, age
+                    
+                    name, age = get_name_and_age()
+                    print("Имя:", name)
+                    print("Возраст:", age)</pre>
+                                <div class="rule">Этот код определяет функцию `get_name_and_age`, которая возвращает два значения: имя и возраст. Затем он вызывает функцию и распаковывает возвращенные значения в переменные `name` и `age`, которые затем выводятся на экран.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection(13)">
+                            Функция как тип, параметр и результат другой функции
+                        </div>
+                        <div class="card-content" id="section13">
+                            <div class="sub-section">
+                                <h2>Функция как параметр</h2>
+                                <pre class="code">def square(x):
+                        return x * x
+                    
+                    def cube(x):
+                        return x * x * x
+                    
+                    def apply(func, x):
+                        return func(x)
+                    
+                    result_square = apply(square, 3)
+                    result_cube = apply(cube, 3)
+                    print("Квадрат числа:", result_square)  # Выведет 9
+                    print("Куб числа:", result_cube)  # Выведет 27</pre>
+                                <div class="rule">Этот код определяет две функции `square` и `cube`, затем функцию `apply`, которая принимает другую функцию и аргумент и вызывает переданную функцию с переданным аргументом.</div>
+                            </div>
+                    
+                            <div class="sub-section">
+                                <h2>Функция как результат другой функции</h2>
+                                <pre class="code">def get_power_function(exponent):
+                        def power(x):
+                            return x ** exponent
+                        return power
+                    
+                    square = get_power_function(2)
+                    cube = get_power_function(3)
+                    print("Квадрат числа 2:", square(2))  # Выведет 4
+                    print("Куб числа 2:", cube(2))  # Выведет 8</pre>
+                                <div class="rule">Этот код определяет функцию `get_power_function`, которая возвращает другую функцию. Затем он создает функции `square` и `cube`, которые являются результатом вызова `get_power_function` с разными аргументами.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(17)">
+                    Декораторы
+                </div>
+                <div class="card-content" id="section17">
+                    <div class="sub-section">
+                        <h2>Пример декоратора</h2>
+                        <pre class="code"># Определение функции декоратора
+            def select(input_func):    
+                def output_func():      # Определяем функцию, которая будет выполняться вместо оригинальной
+                    print("*****************")  # Перед выводом оригинальной функции выводим всякую звездочки
+                    input_func()                # Вызов оригинальной функции
+                    print("*****************")  # После вывода оригинальной функции выводим всякую звездочки
+                return output_func     # Возвращаем новую функцию
+             
+            # Определение оригинальной функции
+            @select         # Применение декоратора select
+            def hello():
+                print("Hello METANIT.COM")
+             
+            # Вызов оригинальной функции
+            hello()</pre>
+                        <div class="rule">В данном примере функция `select` является декоратором. Она принимает функцию в качестве параметра, создает новую функцию `output_func`, которая модифицирует поведение оригинальной функции `hello`. После применения декоратора, вызов `hello()` будет выполнять `output_func`, а не оригинальную функцию `hello`.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Передача параметров в декоратор</h2>
+                        <pre class="code"># Определение функции декоратора
+            def check(input_func):    
+                def output_func(*args):      # Через *args получаем значения параметров оригинальной функции
+                    input_func(*args)                # Вызов оригинальной функции с передачей параметров
+                return output_func     # Возвращаем новую функцию
+             
+            # Определение оригинальной функции
+            @check
+            def print_person(name, age):
+                print(f"Name: {name}  Age: {age}")
+             
+            # Вызов оригинальной функции
+            print_person("Tom", 38)</pre>
+                        <div class="rule">В этом примере декоратор `check` принимает функцию `input_func` и возвращает функцию `output_func`. `output_func` принимает параметры через `*args` и передает их в `input_func`. Таким образом, мы можем модифицировать или проверять параметры, которые передаются в функцию.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Изменение результата функции</h2>
+                        <pre class="code"># Определение функции декоратора
+            def check(input_func):    
+                def output_func(*args):
+                    result = input_func(*args)   # Передаем функции значения для параметров и получаем результат
+                    if result < 0:
+                        result = 0   # Если результат функции меньше нуля, возвращаем 0
+                    return result
+                return output_func
+             
+            # Определение оригинальной функции
+            @check
+            def sum(a, b):
+                return a + b
+             
+            # Вызов оригинальной функции
+            result1 = sum(10, 20)
+            print(result1)          # Выведет 30
+             
+            result2 = sum(10, -20)
+            print(result2)          # Выведет 0</pre>
+                        <div class="rule">В данном примере функция `sum` возвращает сумму двух чисел. Декоратор `check` проверяет результат функции и, если он меньше нуля, возвращает 0. Таким образом, мы можем изменять результат функции перед возвращением его вызывающему коду.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(18)">
+                    Работа со списками
+                </div>
+                <div class="card-content" id="section18">
+                    <div class="sub-section">
+                        <h2>Создание списка</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]</pre>
+                        <div class="rule">В этом примере создается список `my_list`, содержащий числа от 1 до 5.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Обращение к элементам списка</h2>
+                        <pre class="code">print(my_list[0])  # Выведет 1
+            print(my_list[2])  # Выведет 3</pre>
+                        <div class="rule">Список индексируется с 0. Таким образом, `my_list[0]` обращается к первому элементу списка.</div>
+                    </div>
+            
+                    <div class="sub-section">
+                        <h2>Разложение списка</h2>
+                        <pre class="code">a, b, c, d, e = my_list
+            print(a, b, c)  # Выведет 1 2 3</pre>
+                        <div class="rule">Список можно разложить в переменные, как в данном примере.</div>
+                    </div>
+            
+                    
+                    <div class="sub-section">
+                        <h2>Перебор элементов</h2>
+                        <pre class="code">for item in my_list:
+            print(item)</pre>
+                        <div class="rule">Этот цикл перебирает элементы списка и выводит каждый из них.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Сравнение списков</h2>
+                        <pre class="code">list1 = [1, 2, 3]
+            list2 = [1, 2, 3]
+            print(list1 == list2)  # Выведет True</pre>
+                        <div class="rule">Списки могут быть сравнены на равенство.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Получение части списка (срезы)</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+            subset = my_list[1:4]
+            print(subset)  # Выведет [2, 3, 4]</pre>
+                        <div class="rule">Срезы позволяют получить часть списка с определенными индексами.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Методы и функции по работе со списками</h2>
+                        <pre class="code">my_list = [1, 2, 3]
+                length = len(my_list)  # Получение длины списка, в данном случае 3
+                index = my_list.index(2)  # Получение индекса элемента, в данном случае 1
+                my_list.append(4)  # Добавление элемента в конец списка
+                my_list.remove(2)  # Удаление элемента из списка, в данном случае элемент с значением 2
+                print(my_list)  # Выведет [1, 3, 4]</pre>
+                        <div class="rule">Списки имеют множество встроенных методов и функций для различных операций.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Минимальное и максимальное значения</h2>
+                        <pre class="code">my_list = [3, 1, 4, 2]
+                min_value = min(my_list)  # Находит минимальное значение, в данном случае 1
+                max_value = max(my_list)  # Находит максимальное значение, в данном случае 4
+                print(min_value, max_value)</pre>
+                        <div class="rule">Функции `min()` и `max()` позволяют найти минимальное и максимальное значение в списке соответственно.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Соединение списков</h2>
+                        <pre class="code">list1 = [1, 2, 3]
+                list2 = [4, 5, 6]
+                combined_list = list1 + list2  # Соединяет два списка в один
+                print(combined_list)  # Выведет [1, 2, 3, 4, 5, 6]</pre>
+                        <div class="rule">Используйте оператор `+` для соединения двух списков в один.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Списки списков</h2>
+                        <pre class="code">matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+                print(matrix[1][1])  # Выведет 5, элемент во втором ряду и втором столбце</pre>
+                        <div class="rule">Списки могут содержать внутри себя другие списки, создавая таким образом многомерные массивы или матрицы.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Изменение подсписка</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                my_list[1:4] = [8, 9, 10]  # Заменяет подсписок [2, 3, 4] на [8, 9, 10]
+                print(my_list)  # Выведет [1, 8, 9, 10, 5]</pre>
+                        <div class="rule">Используйте срезы и присваивание для замены подсписков в списке.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Подсчет вхождений</h2>
+                        <pre class="code">my_list = [1, 2, 2, 3, 2, 4, 2]
+                count_2 = my_list.count(2)  # Подсчитывает количество вхождений числа 2 в списке
+                print(count_2)  # Выведет 4</pre>
+                        <div class="rule">Метод `count()` используется для подсчета количества вхождений определенного элемента в список.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Удаление с помощью `remove`</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                my_list.remove(3)  # Удаляет первое вхождение числа 3 из списка
+                print(my_list)  # Выведет [1, 2, 4, 5]</pre>
+                        <div class="rule">Метод `remove()` удаляет первое вхождение определенного элемента в списке.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Удаление с помощью `del`</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                del my_list[2]  # Удаляет элемент с индексом 2 из списка
+                print(my_list)  # Выведет [1, 2, 4, 5]</pre>
+                        <div class="rule">Команда `del` позволяет удалить элемент из списка по его индексу.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Сортировка списка</h2>
+                        <pre class="code">my_list = [5, 2, 9, 1, 5]
+                my_list.sort()  # Сортирует список по возрастанию
+                print(my_list)  # Выведет [1, 2, 5, 5, 9]</pre>
+                        <div class="rule">Метод `sort()` сортирует список по возрастанию. Используйте `sort(reverse=True)` для сортировки по убыванию.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Соединение списков</h2>
+                        <pre class="code">list1 = [1, 2, 3]
+                list2 = [4, 5, 6]
+                merged_list = list1 + list2  # Соединяет два списка в один
+                print(merged_list)  # Выведет [1, 2, 3, 4, 5, 6]</pre>
+                        <div class="rule">Используйте оператор `+` для соединения (конкатенации) двух списков.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Создание списка из диапазона чисел</h2>
+                        <pre class="code">my_list = list(range(1, 11))
+                print(my_list)  # Выведет [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</pre>
+                        <div class="rule">Функция `range(start, stop, step)` создает последовательность чисел от `start` до `stop-1` с интервалом `step` (по умолчанию 1).</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Копирование списка</h2>
+                        <pre class="code">original_list = [1, 2, 3]
+                copied_list = original_list.copy()  # Создает копию списка
+                print(copied_list)  # Выведет [1, 2, 3]</pre>
+                        <div class="rule">Используйте метод `copy()` для создания независимой копии списка.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Обратный порядок элементов</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                my_list.reverse()  # Обращает порядок элементов в списке
+                print(my_list)  # Выведет [5, 4, 3, 2, 1]</pre>
+                        <div class="rule">Метод `reverse()` меняет порядок элементов в списке на противоположный.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Расширение списка</h2>
+                        <pre class="code">my_list = [1, 2, 3]
+                my_list.extend([4, 5, 6])  # Расширяет список, добавляя элементы из другого списка
+                print(my_list)  # Выведет [1, 2, 3, 4, 5, 6]</pre>
+                        <div class="rule">Метод `extend(iterable)` добавляет элементы из итерируемого объекта (например, списка или кортежа) в конец списка.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Использование списков в условиях</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                if 3 in my_list:
+                    print("Элемент 3 присутствует в списке")
+                else:
+                    print("Элемент 3 отсутствует в списке")</pre>
+                        <div class="rule">Оператор `in` позволяет проверить наличие элемента в списке. Он возвращает `True`, если элемент присутствует в списке, и `False` в противном случае.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Использование списков в циклах</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                for item in my_list:
+                    print(item)</pre>
+                        <div class="rule">Списки могут быть перебраны в циклах. Каждый элемент списка будет присвоен переменной `item` в примере выше.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Генераторы списков</h2>
+                        <pre class="code">squared_numbers = [x**2 for x in range(1, 6)]  # Генерация списка квадратов чисел от 1 до 5
+                print(squared_numbers)  # Выведет [1, 4, 9, 16, 25]</pre>
+                        <div class="rule">Генераторы списков - это компактный способ создания списков в Python. Они позволяют вам создавать списки на основе выражений и циклов.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Использование метода `zip()`</h2>
+                        <pre class="code">names = ['Alice', 'Bob', 'Charlie']
+                ages = [25, 30, 35]
+                combined = list(zip(names, ages))  # Сопоставление имен и возрастов в кортежи и создание списка кортежей
+                print(combined)  # Выведет [('Alice', 25), ('Bob', 30), ('Charlie', 35)]</pre>
+                        <div class="rule">Метод `zip()` позволяет объединить несколько списков в список кортежей, сопоставляя элементы с одинаковыми индексами.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Изменение элементов списка по индексу</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                my_list[2] = 10
+                print(my_list)  # Выведет [1, 2, 10, 4, 5]</pre>
+                        <div class="rule">Элементы списка могут быть изменены, присвоив новое значение элементу по его индексу.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Удаление элементов из списка по индексу</h2>
+                        <pre class="code">my_list = [1, 2, 3, 4, 5]
+                del my_list[2]
+                print(my_list)  # Выведет [1, 2, 4, 5]</pre>
+                        <div class="rule">Команда `del` удаляет элемент из списка по его индексу.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Объединение списков</h2>
+                        <pre class="code">list1 = [1, 2, 3]
+                list2 = [4, 5, 6]
+                merged_list = list1 + list2
+                print(merged_list)  # Выведет [1, 2, 3, 4, 5, 6]</pre>
+                        <div class="rule">Списки можно объединить, используя оператор `+`, чтобы создать новый список, содержащий элементы обоих списков.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Распаковка списков</h2>
+                        <pre class="code">numbers = [1, 2, 3]
+                a, b, c = numbers
+                print(a, b, c)  # Выведет 1 2 3</pre>
+                        <div class="rule">Список можно распаковать, присвоив его элементы переменным в одной строке кода.</div>
+                    </div>
+                    <div class="sub-section">
+                        <h2>Метод `extend()` для добавления элементов из другого списка</h2>
+                        <pre class="code">list1 = [1, 2, 3]
+                list2 = [4, 5, 6]
+                list1.extend(list2)
+                print(list1)  # Выведет [1, 2, 3, 4, 5, 6]</pre>
+                        <div class="rule">Метод `extend()` добавляет элементы из одного списка в конец другого списка.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Метод `count()` для подсчета вхождений элемента в список</h2>
+                        <pre class="code">numbers = [1, 2, 2, 3, 2, 4]
+                count_of_twos = numbers.count(2)
+                print(count_of_twos)  # Выведет 3</pre>
+                        <div class="rule">Метод `count()` возвращает количество вхождений указанного элемента в список.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Метод `index()` для поиска индекса элемента в списке</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5]
+                index_of_three = numbers.index(3)
+                print(index_of_three)  # Выведет 2</pre>
+                        <div class="rule">Метод `index()` возвращает индекс первого вхождения указанного элемента в список.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Метод `reverse()` для изменения порядка элементов в списке</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5]
+                numbers.reverse()
+                print(numbers)  # Выведет [5, 4, 3, 2, 1]</pre>
+                        <div class="rule">Метод `reverse()` изменяет порядок элементов в списке на обратный.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Метод `sort()` для сортировки элементов в списке</h2>
+                        <pre class="code">numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+                numbers.sort()
+                print(numbers)  # Выведет [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]</pre>
+                        <div class="rule">Метод `sort()` сортирует элементы в списке в порядке возрастания. Можно использовать параметр `reverse=True` для сортировки в убывающем порядке.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Списковые выражения (List Comprehensions)</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5]
+                squared_numbers = [x**2 for x in numbers]
+                print(squared_numbers)  # Выведет [1, 4, 9, 16, 25]</pre>
+                        <div class="rule">Списковые выражения позволяют создавать новый список на основе существующего списка с использованием более компактного синтаксиса.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Использование `map()` для применения функции к каждому элементу списка</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5]
+                def square(x):
+                    return x**2
+                squared_numbers = list(map(square, numbers))
+                print(squared_numbers)  # Выведет [1, 4, 9, 16, 25]</pre>
+                        <div class="rule">Функция `map()` применяет указанную функцию к каждому элементу списка и возвращает новый список с результатами.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Использование `filter()` для фильтрации элементов в списке</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                def is_even(x):
+                    return x % 2 == 0
+                even_numbers = list(filter(is_even, numbers))
+                print(even_numbers)  # Выведет [2, 4, 6, 8, 10]</pre>
+                        <div class="rule">Функция `filter()` фильтрует элементы списка на основе условия, определенного в указанной функции.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Использование `reduce()` для свертки списка к одному значению</h2>
+                        <pre class="code">from functools import reduce
+                numbers = [1, 2, 3, 4, 5]
+                def multiply(x, y):
+                    return x * y
+                product = reduce(multiply, numbers)
+                print(product)  # Выведет 120</pre>
+                        <div class="rule">Функция `reduce()` последовательно применяет указанную функцию к элементам списка, сворачивая список до одного значения.</div>
+                    </div>
+
+                    <div class="sub-section">
+                        <h2>Списковые методы и функции</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5]
+                numbers.append(6)  # Добавляет элемент в конец списка
+                print(numbers)  # Выведет [1, 2, 3, 4, 5, 6]
+                
+                numbers.remove(3)  # Удаляет первое вхождение указанного элемента
+                print(numbers)  # Выведет [1, 2, 4, 5, 6]
+                
+                numbers.sort()  # Сортирует список по возрастанию
+                print(numbers)  # Выведет [1, 2, 4, 5, 6]
+                
+                numbers.reverse()  # Разворачивает список в обратном порядке
+                print(numbers)  # Выведет [6, 5, 4, 2, 1]
+                
+                print(len(numbers))  # Выведет длину списка, в данном случае 5</pre>
+                        <div class="rule">Списки в Python имеют множество встроенных методов и функций для удобной работы с данными.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Объединение списков</h2>
+                        <pre class="code">list1 = [1, 2, 3]
+                list2 = [4, 5, 6]
+                merged_list = list1 + list2  # Объединяет два списка в один
+                print(merged_list)  # Выведет [1, 2, 3, 4, 5, 6]</pre>
+                        <div class="rule">Два списка можно объединить, используя оператор `+`, чтобы создать новый список, содержащий элементы обоих списков.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Разделение списка</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5, 6]
+                split_index = 3
+                first_part = numbers[:split_index]  # Получает первую часть списка до указанного индекса (не включительно)
+                second_part = numbers[split_index:]  # Получает вторую часть списка от указанного индекса (включительно)
+                print(first_part)  # Выведет [1, 2, 3]
+                print(second_part)  # Выведет [4, 5, 6]</pre>
+                        <div class="rule">Список можно разделить на две части, используя срезы (slices) с указанием индекса разделения.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Проверка наличия элемента</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5]
+                element_to_check = 3
+                if element_to_check in numbers:
+                    print(f"{element_to_check} присутствует в списке.")
+                else:
+                    print(f"{element_to_check} отсутствует в списке.")</pre>
+                        <div class="rule">С помощью оператора `in` можно проверить, содержится ли определенный элемент в списке.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Изменение подсписка</h2>
+                        <pre class="code">numbers = [1, 2, 3, 4, 5]
+                numbers[1:3] = [10, 20, 30]  # Заменяет подсписок на новые значения
+                print(numbers)  # Выведет [1, 10, 20, 30, 4, 5]</pre>
+                        <div class="rule">Подсписок в списке можно изменить, присвоив ему новые значения, и он будет заменен на новые элементы.</div>
+                    </div>
+                    <div class="sub-section">
+                        <h2>Подсчет вхождений</h2>
+                        <pre class="code">numbers = [1, 2, 3, 2, 4, 2, 5]
+                count = numbers.count(2)  # Подсчитывает количество вхождений указанного элемента в список
+                print(count)  # Выведет 3, так как число 2 встречается три раза в списке</pre>
+                        <div class="rule">Метод `count()` позволяет подсчитать, сколько раз определенный элемент встречается в списке.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Соединение списков</h2>
+                        <pre class="code">list1 = [1, 2, 3]
+                list2 = [4, 5, 6]
+                merged_list = list1 + list2  # Соединяет два списка в один
+                print(merged_list)  # Выведет [1, 2, 3, 4, 5, 6]</pre>
+                        <div class="rule">Списки можно соединить, используя оператор `+`, чтобы создать новый список, содержащий элементы обоих списков.</div>
+                    </div>
+                </div>
+            </div>            
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(19)">
+                    Кортеж
+                </div>
+                <div class="card-content" id="section19">
+                    <div class="sub-section">
+                        <h2>Создание кортежа</h2>
+                        <pre class="code">my_tuple = (1, 2, 3)
+            print(my_tuple)  # Выведет (1, 2, 3)</pre>
+                        <div class="rule">Кортежи создаются с использованием круглых скобок `()`. Они являются неизменяемыми, то есть их нельзя изменить после создания.</div>
+                    </div>
+                
+                    <div class="sub-section">
+                        <h2>Обращение к элементам кортежа</h2>
+                        <pre class="code">my_tuple = (1, 2, 3)
+            print(my_tuple[1])  # Выведет 2</pre>
+                        <div class="rule">Элементы кортежа можно получить по их индексам, так же как и в списках.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Разложение кортежа</h2>
+                        <pre class="code">my_tuple = (1, 2, 3)
+            a, b, c = my_tuple
+            print(a)  # Выведет 1
+            print(b)  # Выведет 2
+            print(c)  # Выведет 3</pre>
+                        <div class="rule">Кортеж можно "разложить" на переменные, что позволяет удобно присваивать значения элементам кортежа переменным.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" onclick="toggleSection(20)">
+                Диапазон
+            </div>
+                <div class="card-content" id="section20">
+                    <div class="sub-section">
+                        <h2>Создание диапазона с помощью функции range()</h2>
+                        <ul>
+                            <li><code>range(stop):</code> возвращает все целые числа от 0 до <code>stop</code>.</li>
+                            <li><code>range(start, stop):</code> возвращает все целые числа в промежутке от <code>start</code> (включая) до <code>stop</code> (не включая).</li>
+                            <li><code>range(start, stop, step):</code> возвращает целые числа в промежутке от <code>start</code> (включая) до <code>stop</code> (не включая), которые увеличиваются на значение <code>step</code>.</li>
+                        </ul>
+                        <pre class="code">range_example1 = range(5)
+            print(list(range_example1))  # Выведет [0, 1, 2, 3, 4]
+                    
+            range_example2 = range(2, 10)
+            print(list(range_example2))  # Выведет [2, 3, 4, 5, 6, 7, 8, 9]
+                    
+            range_example3 = range(1, 20, 3)
+            print(list(range_example3))  # Выведет [1, 4, 7, 10, 13, 16, 19]</pre>
+                        <div class="rule">Функция <code>range()</code> создает диапазоны целых чисел, которые могут быть использованы в циклах, списковых включениях и других конструкциях.</div>
+                    </div>
+                    
+                    <div class="sub-section">
+                        <h2>Преобразование диапазона в список</h2>
+                        <pre class="code">my_range = range(3)
+            my_list = list(my_range)
+            print(my_list)  # Выведет [0, 1, 2]</pre>
+                        <div class="rule">Диапазон можно преобразовать в список с помощью функции `list()`.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" onclick="toggleSection(21)">
+                    Словари
+                </div>
+                    <div class="card-content" id="section21">
+                        <div class="sub-section">
+                            <h2>Создание и обращение к словарям в Python</h2>
+                            <p>Словари в Python - это неупорядоченные коллекции, которые используются для хранения пар ключ-значение.</p>
+                            <pre class="code"># Создание словаря
+                        my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+                        
+                        # Обращение к элементам словаря
+                        print(my_dict["name"])  # Выведет "Alice"
+                        print(my_dict["age"])   # Выведет 30</pre>
+                            <div class="rule">Ключи в словаре должны быть уникальными. Словари могут содержать значения различных типов данных, включая строки, числа и даже другие словари.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Изменение и добавление элементов в словарь</h2>
+                            <pre class="code"># Изменение значения по ключу
+                        my_dict["age"] = 31
+                        
+                        # Добавление нового элемента в словарь
+                        my_dict["job"] = "Developer"
+                        
+                        print(my_dict)</pre>
+                            <div class="rule">Словари являются изменяемыми объектами, поэтому вы можете изменять их содержимое, включая добавление и удаление элементов.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Методы словарей</h2>
+                            <pre class="code"># Вывод всех ключей
+                        print(my_dict.keys())
+                        
+                        # Вывод всех значений
+                        print(my_dict.values())
+                        
+                        # Проверка наличия ключа в словаре
+                        print("name" in my_dict)  # Выведет True
+                        
+                        # Удаление элемента по ключу
+                        del my_dict["job"]
+                        
+                        # Получение значения по ключу с предоставлением значения по умолчанию
+                        print(my_dict.get("job", "Not Found"))  # Выведет "Not Found"</pre>
+                            <div class="rule">Словари поддерживают различные методы, которые позволяют выполнять операции с ключами и значениями.</div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h2>Итерация по словарям</h2>
+                            <pre class="code"># Итерация по ключам
+                        for key in my_dict:
+                            print(key, my_dict[key])
+                        
+                        # Итерация по парам ключ-значение
+                        for key, value in my_dict.items():
+                            print(key, value)</pre>
+                            <div class="rule">Вы можете итерироваться по ключам или парам ключ-значение в словаре, используя циклы.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Словари со сложными ключами</h2>
+                            <p>Ключи словаря могут быть не только строками, но и другими неизменяемыми типами данных, такими как кортежи или числа:</p>
+                            <pre class="code"># Словарь с кортежами в качестве ключей
+                        coordinate_dict = {(0, 1): "наверх", (0, -1): "вниз", (1, 0): "вправо", (-1, 0): "влево"}</pre>
+                            <div class="rule">Словари могут использоваться для создания более сложных структур данных для хранения информации.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Вложенные словари</h2>
+                            <pre class="code"># Вложенные словари
+                        nested_dict = {
+                            "person1": {"name": "Alice", "age": 30},
+                            "person2": {"name": "Bob", "age": 25}
+                        }</pre>
+                            <div class="rule">Словари могут быть вложены друг в друга, создавая более сложные структуры данных для представления информации.</div>
+                        </div>
+
+                        <div class="sub-section">
+                            <h2>Удаление элементов из словаря</h2>
+                            <pre class="code"># Удаление элемента по ключу
+                        del my_dict["key_name"]
+                        
+                        # Удаление элемента с возвратом значения
+                        removed_value = my_dict.pop("key_name", None)</pre>
+                            <div class="rule">Элементы можно удалять из словаря по ключу. Метод `pop()` также возвращает удаленное значение или значение по умолчанию, если ключ не найден.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Проверка наличия ключа в словаре</h2>
+                            <pre class="code"># Проверка наличия ключа
+                        if "key_name" in my_dict:
+                            print("Ключ существует")</pre>
+                            <div class="rule">С помощью оператора `in` можно проверить, существует ли определенный ключ в словаре.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Копирование словаря</h2>
+                            <pre class="code"># Полное копирование словаря
+                        copied_dict = my_dict.copy()
+                        
+                        # Копирование словаря с использованием dict()
+                        copied_dict = dict(my_dict)</pre>
+                            <div class="rule">Для создания копии словаря используются метод `copy()` или функция `dict()`.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Объединение словарей</h2>
+                            <pre class="code"># Объединение словарей (Python 3.9+)
+                        merged_dict = {**dict1, **dict2}
+                        
+                        # Объединение словарей с использованием метода update()
+                        dict1.update(dict2)</pre>
+                            <div class="rule">Словари можно объединить в один новый словарь, используя оператор `**` (Python 3.9+) или метод `update()`.</div>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h2>Словари списков</h2>
+                            <pre class="code"># Создание словаря списков
+                        dict_of_lists = {"key1": [1, 2, 3], "key2": [4, 5, 6]}
+                        
+                        # Добавление элемента в список в словаре
+                        dict_of_lists["key1"].append(4)</pre>
+                            <div class="rule">Элементами словаря могут быть не только значения, но и другие структуры данных, такие как списки.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" onclick="toggleSection(22)">
+                        Множества
+                    </div>
+                        <div class="card-content" id="section22">
+                            <div class="sub-section">
+                                <h2>Создание множества</h2>
+                                <pre class="code"># Создание множества
+                            my_set = {1, 2, 3, 4, 5}</pre>
+                                <div class="rule">Множество можно создать, указав элементы в фигурных скобках.</div>
+                            </div>
+                            
+                            <div class="sub-section">
+                                <h2>Добавление элемента в множество</h2>
+                                <pre class="code"># Добавление элемента в множество
+                            my_set.add(6)</pre>
+                                <div class="rule">Элемент можно добавить в множество с использованием метода `add()`.</div>
+                            </div>
+                            
+                            <div class="sub-section">
+                                <h2>Удаление элемента из множества</h2>
+                                <pre class="code"># Удаление элемента из множества
+                            my_set.remove(3)</pre>
+                                <div class="rule">Элемент можно удалить из множества с использованием метода `remove()`.</div>
+                            </div>
+                            
+                            <div class="sub-section">
+                                <h2>Проверка наличия элемента в множестве</h2>
+                                <pre class="code"># Проверка наличия элемента в множестве
+                            if 2 in my_set:
+                                print("Элемент существует")</pre>
+                                <div class="rule">С использованием оператора `in` можно проверить, существует ли определенный элемент в множестве.</div>
+                            </div>
+                            
+                            <div class="sub-section">
+                                <h2>Операции с множествами</h2>
+                                <pre class="code"># Объединение множеств
+                            union_set = set1.union(set2)
+                            
+                            # Пересечение множеств
+                            intersection_set = set1.intersection(set2)
+                            
+                            # Разность множеств
+                            difference_set = set1.difference(set2)</pre>
+                                <div class="rule">Существуют различные операции, такие как объединение, пересечение и разность множеств, которые можно выполнять с помощью соответствующих методов.</div>
+                            </div>
+                            
+                            <div class="sub-section">
+                                <h2>Методы и функции по работе с множествами</h2>
+                                <pre class="code"># Добавление множества к другому множеству
+                            set1.update(set2)
+                            
+                            # Копирование множества
+                            copied_set = set1.copy()</pre>
+                                <div class="rule">Множества поддерживают различные методы, такие как `update()` для добавления множества к другому множеству и `copy()` для создания копии множества.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" onclick="toggleSection(100)">
+                            тест
+                        </div>
+                            <div class="card-content" id="section100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
